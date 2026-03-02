@@ -1,6 +1,6 @@
 import ItemClient from "./ItemClient";
-import dbConnect from "../lib/db";
-import Item from "../model/Item";
+import dbConnect from "../../lib/db";
+import Item from "../../model/Item";
 
 export default async function ItemPage() {
     await dbConnect();
