@@ -8,7 +8,7 @@ export default function ItemClient({ initialItems }) {
     const [itemInput, setItemInput] = useState("");
     const [editingId, setEditingId] = useState(null);
 
-    const API = "/api/item";
+    const API = "/api/items";
 
     const refreshItems = async () => {
         const res = await axios.get(API);
@@ -59,7 +59,7 @@ export default function ItemClient({ initialItems }) {
                 </button>
             </div>
 
-            <table border="1" cellPadding="10">
+            <table border="1" cellPadding="10" cellSpacing="5">
                 <tbody>
                     {items.length === 0 ? (
                         <tr>
